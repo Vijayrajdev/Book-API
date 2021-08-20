@@ -22,15 +22,15 @@
 // 2. AUTHORS
 
 /* 
-- To get all the authors
-- To get a specific author
-- To get list of authors based on books
+- To get all the authors ⚡
+- To get a specific author ⚡
+- To get list of authors based on books ⚡
 */
 
 // 3. PUBLICATIONS
 
 /* 
-- To get all the publications
-- To get a specific publication
+- To get all the publications ⚡
+- To get a specific publication ⚡
 - To get a list of publication based on a book
 */
