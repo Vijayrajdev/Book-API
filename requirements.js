@@ -32,5 +32,5 @@
 /* 
 - To get all the publications ⚡
 - To get a specific publication ⚡
-- To get a list of publication based on a book
+- To get a list of publication based on a book ⚡
 */
