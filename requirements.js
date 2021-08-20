@@ -66,7 +66,7 @@
 /* 
 - Delete a book ⚡
 - Delete author from book ⚡
-- Delete author from book and related book from author
+- Delete author from book and related book from author ⚡
 */
 
 // ------------ X -------------- //
