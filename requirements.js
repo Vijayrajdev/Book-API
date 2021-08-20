@@ -1,6 +1,8 @@
 // Requirement for project
 // We are a book management company
 
+// ------------ X -------------- //
+
 /* BOOKS */
 //ISBN, title, pub date, num page, author[], category[]
 
@@ -9,6 +11,8 @@
 
 /* PUBLICATIONS */
 // ID, name, books[]
+
+// ------------ X -------------- //
 
 // GET REQUEST // 
 
@@ -46,3 +50,23 @@
 - Add new publication ⚡
 - Add new author ⚡
 */
+
+// ------------ X -------------- //
+
+// PUT REQUEST 
+
+/* 
+- Update book details if author is changed ⚡
+*/
+
+// ------------ X -------------- //
+
+// DELETE 
+
+/* 
+- Delete a book ⚡
+- Delete author from book ⚡
+- Delete author from book and related book from author
+*/
+
+// ------------ X -------------- //
