@@ -10,6 +10,8 @@
 /* PUBLICATIONS */
 // ID, name, books[]
 
+// GET REQUEST // 
+
 // 1. BOOKS
 
 /* 
@@ -33,4 +35,14 @@
 - To get all the publications ⚡
 - To get a specific publication ⚡
 - To get a list of publication based on a book ⚡
+*/
+
+// ------------ X -------------- //
+
+// POST REQUEST
+
+/* 
+- Add new book ⚡
+- Add new publication ⚡
+- Add new author ⚡
 */

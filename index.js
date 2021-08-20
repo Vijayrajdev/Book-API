@@ -1,9 +1,16 @@
 const express = require("express");
+var bodyParser = require("body-parser");
+
+// Databse
+
+const database = require("./database");
 
 // Initialize express
 
 const booky = express();
-const database = require("./database");
+
+booky.use(bodyParser.urlencoded({ extended: true }));
+booky.use(bodyParser.json());
 
 /* 
 Route           - /
@@ -179,6 +186,54 @@ booky.get("/publication/book/:isbn", (req, res) => {
         return res.json({ error: `No publication found for the ISBN ${req.params.isbn}` })
     };
 
-    return res.json({ publication: getSpecificPubication })
-})
+    return res.json({ publication: getSpecificPubication });
+});
+
+// POST
+
+/*
+Route           - /book/new
+Description     - Add new book
+Access          - PUBLIC
+Parameter       - NONE
+Method          - POST
+*/
+
+booky.post("/book/new", (req, res) => {
+
+    const newBook = req.body;
+    database.books.push(newBook);
+    return res.json({ updatedBooks: database.books });
+});
+
+/*
+Route           - /author/new
+Description     - Add new authors
+Access          - PUBLIC
+Parameter       - NONE
+Method          - POST
+*/
+
+booky.post("/author/new", (req, res) => {
+
+    const newAuthor = req.body;
+    database.author.push(newAuthor);
+    return res.json({ updatedAuthors: database.author });
+});
+
+/*
+Route           - /publication/new
+Description     - Add new publications
+Access          - PUBLIC
+Parameter       - NONE
+Method          - POST
+*/
+
+booky.post("/publication/new", (req, res) => {
+
+    const newPublication = req.body;
+    database.publication.push(newPublication);
+    return res.json({ updatedPublications: database.publication });
+});
+
 booky.listen(3000, () => console.log("Server is up and running"));
